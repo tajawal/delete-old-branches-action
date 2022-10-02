@@ -41,9 +41,6 @@ outputs:
   deleted_branches:
     description: "List of branches that were deleted"
 runs:
-#   using: "docker"
-#   image: "Dockerfile"
-  using: "composite"
-  steps:
-    - run: $GITHUB_ACTION_PATH/delete-old-branches
-      shell: bash
+  using: "docker"
+  image: "Dockerfile"
+
