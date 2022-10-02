@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ls -la 
 set -eo pipefail
 
 [[ -n ${INPUT_REPO_TOKEN} ]] || { echo "Please set the REPO_TOKEN input"; exit 1; }
