@@ -1,5 +1,7 @@
 #!/bin/bash
 ls -la 
+pwd
+ls -al /github/workflow
 set -eo pipefail
 
 [[ -n ${INPUT_REPO_TOKEN} ]] || { echo "Please set the REPO_TOKEN input"; exit 1; }
