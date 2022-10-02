@@ -7,5 +7,5 @@
 
 # This image tajawalcom/image:alpine contains the above steps, built in advance to avoid building in container error while we need to use network host and no option for that 
 FROM tajawalcom/image:alpine
-
+COPY delete-old-branches /usr/bin/delete-old-branches
 ENTRYPOINT ["/usr/bin/delete-old-branches"]
